@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+<div class="card rounded-0 border-0 shadow">
+    <div style='height:15rem'>
+        <img src="{{ drapeaux }}" class="card-img-top rounded-0" alt="..." height="100%" style="object-fit: cover">
+    </div>
+    <div class="card-body rounded-0 rounded-0">
+        <h1 class="card-title">{{ pays }}</h1>
+        <p class="card-text">region : {{ region }}</p>
+        <p class="card-text">Monaies : {{ monnaies }}</p>
+        <p class="card-text">
+            languages :
+            <!-- {{ ', '.join(languages['name']) }}
+            {% for langue in languages %}
+            {{ langue.name }},
+            {% endfor %} -->
+        </p>
+        <p class="card-text">nombre d'habitant : {{ habitants }}</p>
+    </div>
+</div>
+
+<article class="media content-section">
+    <div class="media-body">
+      <div class="article-metadata">
+        <p class="article-content">{{ 'Données pays (' +  pays_name_form + ')'}}</p>
+        <small class="text-muted">{{ pays_name_api }}</small>
+      </div>
+    </div>
+  </article>
+
+
+{% endblock content %}

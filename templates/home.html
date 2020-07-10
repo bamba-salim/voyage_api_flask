@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <article class="media content-section">
+      <div class="media-body">
+        <div>
+          <p class="font-weight-bold">{{ 'Bonjour, nous disposons des données suivantes pour chaque pays du monde.' }}</p>
+          <p>{{ '( ici ex: France )' }}</p>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="media content-section">
+      <div class="media-body">
+        <div class="article-metadata">
+          <p class="article-content">{{ 'Données pays (France)' }}</p>
+          <small class="text-muted">{{ test_nom }}</small>
+        </div>
+      </div>
+    </article>
+
+    <article class="media content-section">
+      <div class="media-body">
+        <div class="article-metadata">
+          <p class="article-content">{{ 'Données capital (Paris)' }}</p>
+          <small class="text-muted">{{ test_capitale }}</small>
+        </div>
+      </div>
+    </article>
+
+    <article class="media content-section">
+      <div class="media-body">
+        <div class="article-metadata">
+          <p class="article-content">{{ 'Données langue (français)' }}</p>
+          <small class="text-muted">{{ test_language }}</small>
+        </div>
+      </div>
+    </article>
+
+    <article class="media content-section">
+      <div class="media-body">
+        <div class="article-metadata">
+          <p class="article-content">{{ 'Données monaie (française)' }}</p>
+          <small class="text-muted">{{ test_monaie }}</small>
+        </div>
+      </div>
+    </article>
+
+    <article class="media content-section">
+      <div class="media-body">
+        <div class="article-metadata">
+          <p class="article-content">{{ 'Données frontières (française)' }}</p>
+          <small class="text-muted">{{ test_region }}</small>
+        </div>
+      </div>
+    </article>
+
+{% endblock content %}

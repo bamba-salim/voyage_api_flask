@@ -1,0 +1,15 @@
+{% from "_formhelpers.html" import render_field %}
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <form method="POST" action="{{ url_for('pays') }} ">
+    <dl>
+        {{ render_field(form.pays) }}
+
+    </dl>
+    <input class="btn btn-primary" type="submit" value="Valider">
+    </form>
+
+{% endblock content %}
+
